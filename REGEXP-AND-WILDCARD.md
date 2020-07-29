@@ -1,4 +1,4 @@
-# Hackerrank Weather Observation Station 6, 7, 8, 9, 10, 11, 12
+# Hackerrank Weather Observation Station 6-12
 Input Format
 
 The STATION table is described as follows:
