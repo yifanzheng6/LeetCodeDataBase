@@ -11,51 +11,43 @@ The STATION table is described as follows:
 |LAT_N|NUMBER|
 |LONG_W|NUMBER|
 
-## Question 6
+## 6
 
 Query the list of CITY names **starting with** vowels (i.e., a, e, i, o, or u) from STATION. Your result cannot contain duplicates.
-
-## Solution
 
 ```sql
 SELECT DISTINCT CITY FROM STATION
 WHERE city REGEXP "^[aeiou]"
 ```
 
-## Question 7
+## 7
 
 Query the list of CITY names **ending with** vowels (i.e., a, e, i, o, or u) from STATION. Your result cannot contain duplicates.
-
-## Solution
 
 ```sql
 SELECT DISTINCT CITY FROM STATION
 WHERE CITY REGEXP "[aeiou]$"
 ```
 
-## Question 8
+## 8
 
 Query the list of CITY names from STATION which have vowels (i.e., a, e, i, o, and u) as both their **first** and **last** characters. Your result cannot contain duplicates.
-
-## Solution
 
 ```sql
 SELECT DISTINCT CITY FROM STATION
 WHERE CITY REGEXP "^[aeiou].*[aeiou]$"
 ```
 
-## Question 9
+## 9
 
 Query the list of CITY names from STATION that **do not start with** vowels. Your result cannot contain duplicates.
-
-## Solution
 
 ```sql
 SELECT DISTINCT CITY FROM STATION
 WHERE CITY REGEXP "^[^aeiou]"
 ```
 
-## Question 10
+## 10
 
 Query the list of CITY names from STATION that **do not end with** vowels. Your result cannot contain duplicates.
 
@@ -63,7 +55,7 @@ Query the list of CITY names from STATION that **do not end with** vowels. Your 
 SELECT DISTINCT CITY FROM STATION
 WHERE CITY REGEXP "[^aeiou]$"
 ```
-## Question 11
+## 11
 
 Query the list of CITY names from STATION that **either do not start with vowels or do not end with vowels**. Your result cannot contain duplicates.
 
@@ -72,7 +64,7 @@ SELECT DISTINCT CITY FROM STATION
 WHERE CITY REGEXP "^[^aeiou]" OR CITY REGEXP "[^aeiou]$"
 ```
 
-## Question 12
+## 12
 
 Query the list of CITY names from STATION that **do not start with vowels and do not end with vowels**. Your result cannot contain duplicates.
 
