@@ -74,7 +74,8 @@ NULL Priyanka NULL NULL
 
 **Key Idea**
 
-Don't forget ";" after `SET` before  `SELECT` 
+- Don't forget ";" after `SET` before  `SELECT` 
+- Update `@variable := @variable+1`
 
 ```sql
 set @r1=0, @r2=0, @r3=0, @r4=0;
