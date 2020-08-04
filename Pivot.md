@@ -74,6 +74,8 @@ NULL Priyanka NULL NULL
 
 **Key Idea**
 
+Don't forget ";" after `SET` before  `SELECT` 
+
 ```sql
 set @r1=0, @r2=0, @r3=0, @r4=0;
  select case when Occupation='Doctor' then (@r1:=@r1+1)
